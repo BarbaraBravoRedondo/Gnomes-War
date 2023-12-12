@@ -24,8 +24,8 @@ let moves = 0;
 // Functions
 
 function scores() {
-    player.innerHTML = 'Jugador: ' + playerWins;
-    computer.innerHTML = 'Computadora: ' + computerWins;
+    player.innerHTML = 'GNÓMADA: ' + playerWins;
+    computer.innerHTML = 'GNOMÓTICO: ' + computerWins;
 }
 
 function compare(playerChoice) {
@@ -34,8 +34,8 @@ function compare(playerChoice) {
     computerChoiceDisplay.textContent = computerChoice;
     // playerImg.src = `${playerChoice}.png`;
     // computerImg.src = `${computerChoice}.png`;
-    playerLivesDisplay.textContent = 'Jugador: ' + playerWins;
-    computerLivesDisplay.textContent = 'Computadora: ' + computerWins;
+    playerLivesDisplay.textContent = 'GNÓMADA - ' + ' ' + playerWins;
+    computerLivesDisplay.textContent = 'GNOMÓTICO - ' + computerWins;
 
     if (playerChoice !== "") {
         moves++;
@@ -49,10 +49,10 @@ function compare(playerChoice) {
         (playerChoice === '💧' && computerChoice === '🔥')
     ) {
         msg.innerHTML = 'GANASTE';
-        player.innerHTML = 'GNOMOTICO: ' + ++playerWins;
+        player.innerHTML = 'GNOMOTICO - ' + ' ' + ++playerWins;
     } else {
         msg.innerHTML = ' PERDISTE ';
-        computer.innerHTML = 'GNOMÓTICO:' + ++computerWins;
+        computer.innerHTML = 'GNOMÓTICO -'+ ' '  + ++computerWins;
     }
     console.log(computerChoice);
     console.log(playerChoice);
