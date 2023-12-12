@@ -22,6 +22,7 @@ let computerWins = 0;
 let moves = 0;
 
 // Functions
+
 function scores() {
     player.innerHTML = 'Jugador: ' + playerWins;
     computer.innerHTML = 'Computadora: ' + computerWins;
