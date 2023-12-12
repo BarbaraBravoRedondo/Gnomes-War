@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/174709db64.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>GNOMES WAR <i class="fa-solid fa-house"></i></title>
+  </head>
+  <body>
+    <video
+      autoplay="autoplay"
+      loop="loop"
+      id="video_background"
+      preload="auto"
+      volume="50"
+    >
+      <source src="gif.mp4" type="video/mp4" />
+    </video>
+
+    <header><h1>GNOMES WAR</h1></header>
+    <main class="js-main main">
+      <div class="players">
+        <div class="player1">
+          <span class="name">GNÓMADA</span>
+          <img
+            class="js-player-img player"
+            src="./images/player.png"
+            alt="Selección del Jugador"
+          />
+          <span class="js-player-choice choice">?</span>
+        </div>
+        <div class="computer">
+          <span class="name">GNOMÓTICO</span>
+          <img
+            class="js-computer-img gnomo"
+            src="./images/gnomo.png"
+            alt="Selección de la Computadora"
+          />
+          <span class="js-computer-choice choice">?</span>
+        </div>
+      </div>
+      <div class="results">
+        <p class="js-msg text">¡Que la energía de los elementos te acompañe!</p>
+
+        <div class="images-container form">
+          <img
+            class="js-plant plant"
+            src="./images/plant.png"
+            alt="Plant"
+            value="🍃"
+          />
+          <img class="js-fire fire" src="./images/fire.png" alt="Fire" value="🔥" />
+          <img class="js-aqua aqua" src="./images/aqua.png" alt="Aqua" value="💧" />
+        </div>
+        <div class="box">
+          <p class="js-player">GNÓMADA: 0</p>
+          <p class="js-computer">GNOMÓTICO: 0</p>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+
+  </body>
+</html>
