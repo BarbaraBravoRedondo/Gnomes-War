@@ -39,9 +39,7 @@ function resetGame() {
 function compare(playerChoice) {
     const computerChoice = getLuck();
     playerChoiceDisplay.textContent = playerChoice;
-    computerChoiceDisplay.textContent = computerChoice;
-    // playerImg.src = `${playerChoice}.png`;
-    // computerImg.src = `${computerChoice}.png`;
+    computerChoiceDisplay.textContent = computerChoice;""
     playerLivesDisplay.textContent = 'GNÓMADA - ' + ' ' + playerWins;
     computerLivesDisplay.textContent = 'GNOMÓTICO - ' + computerWins;
 
