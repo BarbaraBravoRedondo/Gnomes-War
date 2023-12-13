@@ -61,7 +61,7 @@ function compare(playerChoice) {
         computer.innerHTML = 'GNOMÓTICO -'+ ' '  + ++computerWins;
     }
     if (playerWins === 5) {
-        msg.innerHTML = '~ ERES EL REY DE GNOMOS ~';
+        msg.innerHTML = '~ ERES EL REY DE LOS GNOMOS ~';
         resetGame();
     } else if (computerWins === 5) {
         msg.innerHTML = '> GAME OVER <';
