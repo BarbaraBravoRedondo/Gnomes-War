@@ -49,11 +49,7 @@ function compare(playerChoice) {
         (playerChoice === '💧' && computerChoice === '🔥')
     ) {
         msg.innerHTML = 'GANASTE';
-<<<<<<< HEAD
-        player.innerHTML = 'GNÓMADA - ' + ' ' + ++playerWins;
-=======
         player.innerHTML = 'GNOMADA - ' + ' ' + ++playerWins;
->>>>>>> b65257a5a228197b0cbf93cd9e7ab135d3caa833
     } else {
         msg.innerHTML = ' PERDISTE ';
         computer.innerHTML = 'GNOMÓTICO -'+ ' '  + ++computerWins;
