@@ -17,17 +17,25 @@ const computerLivesDisplay = document.querySelector('.js-computer');
 const playerImg = document.querySelector('.js-player-img');
 const computerImg = document.querySelector('.js-computer-img');
 
+const mushrooms = document.querySelectorAll('.js-mushroom mushroom')
+
 let playerWins = 0;
 let computerWins = 0;
 let moves = 0;
-
+let playerLives = 3;
 // Functions
 
 function scores() {
     player.innerHTML = 'GNÓMADA: ' + playerWins;
     computer.innerHTML = 'GNOMÓTICO: ' + computerWins;
 }
-
+function resetGame() {
+    playerWins = 0;
+    computerWins = 0;
+    moves = 0;
+    player.innerHTML = 'GNÓMADA - ' + playerWins;
+    computer.innerHTML = 'GNOMÓTICO - ' + computerWins;
+}
 function compare(playerChoice) {
     const computerChoice = getLuck();
     playerChoiceDisplay.textContent = playerChoice;
@@ -53,6 +61,13 @@ function compare(playerChoice) {
     } else {
         msg.innerHTML = ' PERDISTE ';
         computer.innerHTML = 'GNOMÓTICO -'+ ' '  + ++computerWins;
+    }
+    if (playerWins === 5) {
+        msg.innerHTML = '~ ERES EL REY DE GNOMOS ~';
+        resetGame();
+    } else if (computerWins === 5) {
+        msg.innerHTML = '> GAME OVER <';
+        resetGame();
     }
     console.log(computerChoice);
     console.log(playerChoice);
