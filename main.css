@@ -215,6 +215,11 @@ h1 {
     padding: 13px;
     
   }
+  .choice{
+    width: 70px;
+    height: 70px;
+    font-size: 1.7em;
+  }
 
 
   .form{gap:30px;}
