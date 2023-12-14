@@ -13,22 +13,23 @@ main {
   height: max-content;
 }
 #myVideo {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 100%;  z-index: -1000;  overflow: hidden;  width: auto;
-  height: auto;
+  min-height: 100%;
+  z-index: -1000;
 }
 #video_background {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   right: 0px;
   min-width: 100%;
   min-height: 100%;
-
-
-
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 
 }
 #video_pattern {
