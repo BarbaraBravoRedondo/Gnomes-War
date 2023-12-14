@@ -161,7 +161,7 @@ h1 {
   .text {
     font-size: 1.7em;
     padding: 10px;
-    width: 500px;
+    width: max-content;
   }
   .players {
     font-size: 1em;
@@ -212,6 +212,7 @@ h1 {
   }
   .text{
     font-size: 2em;
+    width: max-content;
    
   }
   .players{

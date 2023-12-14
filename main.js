@@ -24,12 +24,7 @@ let computerWins = 0;
 let moves = 0;
 let playerLives = 3;
 // Functions
-document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('#video_background');
-    if (video) {
-      video.setAttribute('preload', 'auto');
-    }
-  });
+
 
 function scores() {
     player.innerHTML = 'GNÓMADA: ' + playerWins;
