@@ -10,32 +10,28 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0 20px;
   padding: 30px;
-
   height: max-content;
 }
-
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;  z-index: -1000;  overflow: hidden;  width: auto;
+  height: auto;
+}
 #video_background {
   position: absolute;
   bottom: 0px;
   right: 0px;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden;
+
+
+
 
 }
-#video_pattern {
-  background: #fff;
-  position: fixed;
-  opacity: 0.8;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
+
 
 h1 {
   font-family: 'Macondo Swash Caps', cursive;
